@@ -98,9 +98,16 @@ const TextCaseConverter: React.FC = () => {
         </div>
 
         <footer className="text-center pt-12 border-t border-gray-100">
-          <p className="text-gray-500 text-sm">
-            Built with React, TypeScript, and Tailwind CSS
-          </p>
+                    <p className="text-gray-500 text-sm">
+                        Developed by Mehedi Hasan Rihat ©{" "}
+                        {new Date().getFullYear()}{" "}
+                    </p>
+                    <a
+                        href="mailto:mehedi6381@gmail.com"
+                        className="text-gray-500 text-sm hover:text-purple-600 transition-colors"
+                    >
+                        mehedi6381@gmail.com
+                    </a>
         </footer>
       </div>
     </div>
