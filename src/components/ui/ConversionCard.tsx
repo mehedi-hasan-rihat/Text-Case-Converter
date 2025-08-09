@@ -24,7 +24,7 @@ const ConversionCard: React.FC<ConversionCardProps> = ({
         </div>
         <button
           onClick={() => onCopy(convertedText, caseType.id)}
-          className={`p-2 rounded-lg transition-all duration-200 ${
+          className={`p-2 rounded-lg transition-all duration-200 cursor-pointer ${
             isCopied 
               ? 'bg-green-100 text-green-600' 
               : 'bg-gray-100 text-gray-600 hover:bg-gray-200 group-hover:bg-blue-50 group-hover:text-blue-600'
@@ -36,7 +36,7 @@ const ConversionCard: React.FC<ConversionCardProps> = ({
       </div>
       <div className="bg-gray-50 rounded-lg p-4 min-h-[60px] border-2 border-dashed border-gray-200">
         <p className="text-gray-800 font-mono text-sm break-all leading-relaxed">
-          {convertedText || <span className="text-gray-400 italic">Converted text will appear here</span>}
+          {convertedText || <span className="text-gray-400 italic">{caseType.converter("Converted text will appear here")}</span>}
         </p>
       </div>
     </div>
