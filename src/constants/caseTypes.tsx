@@ -55,5 +55,47 @@ export const caseTypes: CaseType[] = [
     name: 'CONSTANT_CASE',
     description: 'Uppercase with underscores',
     converter: textConverters.constantCase
+  },
+  {
+    id: 'alternating',
+    name: 'Alternating Case',
+    description: 'Convert text to aLtErNaTiNg CaSe',
+    converter: textConverters.alternating
+  },
+  {
+    id: 'inverse',
+    name: 'Inverse Case',
+    description: 'Flip the case of each character',
+    converter: textConverters.inverse
+  },
+  {
+    id: 'random',
+    name: 'Random Case',
+    description: 'Randomly capitalize letters',
+    converter: textConverters.random
+  },
+  {
+    id: 'capitalized',
+    name: 'Capitalized Case',
+    description: 'Capitalize Each Word Like This',
+    converter: textConverters.capitalized
+  },
+  {
+    id: 'dot',
+    name: 'Dot Case',
+    description: 'dot.case.text',
+    converter: textConverters.dot
+  },
+  {
+    id: 'path',
+    name: 'Path Case',
+    description: 'path/case/text',
+    converter: textConverters.path
+  },
+  {
+    id: 'header',
+    name: 'Header Case',
+    description: 'Header-Case-Text',
+    converter: textConverters.header
   }
 ];
